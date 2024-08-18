@@ -25,24 +25,4 @@ internal static class TableVisualisationEngine
         AnsiConsole.Write(table);
     }
 
-
-
-
-    //    // Display a progress bar
-    //    AnsiConsole.Progress()
-    //        .Start(ctx =>
-    //        {
-    //    var task = ctx.AddTask("[green]Processing...[/]");
-
-    //    while (!ctx.IsFinished)
-    //    {
-    //        task.Increment(12.5);
-    //        Thread.Sleep(50);
-    //    }
-    //});
-    //    TimeSpan test = DateTime.Now.AddHours(3) - DateTime.Now;
-    //AnsiConsole.MarkupLine($"[bold red] {((int)test.TotalHours)} [/]");
-
-
-
 }
