@@ -5,6 +5,7 @@ A simple console application to track your coding habits, built with C# and SQLi
 ## Table of Contents
 - Introduction
 - Features
+- Requirements
 - Installation
 - Usage
 - Contributing
@@ -18,6 +19,12 @@ The Coding Tracker is a console application designed to help developers keep tra
 - Delete sessions
 - View all records
 - Simple and intuitive console interface
+
+## Requirements
+To run this application, you need the following:
+- **.NET SDK**: Version 6.0 or higher
+- **SQLite**: Ensure SQLite is installed and accessible
+- **Operating System**: Windows 10 or higher, macOS, or Linux
 
 ## Installation
 To get started with the Coding Tracker, follow these steps:
