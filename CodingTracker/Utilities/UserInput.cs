@@ -1,6 +1,4 @@
-﻿using System.Globalization;
-
-namespace CodingTracker.Utilities;
+﻿namespace CodingTracker.Utilities;
 
 internal static class UserInput
 {
@@ -11,7 +9,7 @@ internal static class UserInput
 
         if (time == "0") return "0";
 
-        while (String.IsNullOrEmpty(time) || !TimeOnly.TryParse(time, out _))
+        while (!Validation.IsValidTime(time))
         {
             Console.WriteLine("Please Enter a Valid Format");
             time = Console.ReadLine()?.Trim();
@@ -37,7 +35,7 @@ internal static class UserInput
 
         if (dateInput == "0") return "0";
 
-        while (!DateTime.TryParseExact(dateInput, "dd/MM/yyyy", new CultureInfo("en-US"), DateTimeStyles.None, out _))
+        while (!Validation.IsValidDate(dateInput))
         {
             Console.WriteLine("\nInvalid date format, Please try again or type 0 to return to main menu");
             dateInput = Console.ReadLine()?.Trim();
@@ -56,7 +54,7 @@ internal static class UserInput
 
         if (value == "0") return 0;
 
-        while (String.IsNullOrEmpty(value) || !int.TryParse(value, out _))
+        while (!Validation.IsValidNumber(value))
         {
             Console.WriteLine("Please Enter a valid numeric value. Or type 0 to return to main menu");
             value = Console.ReadLine()?.Trim();

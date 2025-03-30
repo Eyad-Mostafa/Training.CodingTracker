@@ -68,7 +68,7 @@ Do You Want to Use Today's Date?
 
         int duration = CalculateDuration(startTime, endTime);
 
-        if(Validation.CheckDuration(duration))
+        if(!Validation.IsValidDuration(duration))
         {
             Console.WriteLine("Invalid Times");
             Console.WriteLine("\n\nPress any key to return to main menu....");
@@ -128,7 +128,7 @@ Do You Want to Use Today's Date?
 
         int newDuration = CalculateDuration(newStartTime, newEndTime);
 
-        if (Validation.CheckDuration(newDuration))
+        if (!Validation.IsValidDuration(newDuration))
         {
             Console.WriteLine("Invalid Times");
             Console.WriteLine("\n\nPress any key to return to main menu....");
@@ -198,5 +198,4 @@ Do You Want to Use Today's Date?
         connection.Close();
         PrintSessions(sessions);
     }
-
 }

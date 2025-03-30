@@ -6,5 +6,4 @@ class Program
         DatabaseManager.CreataDatabase();
         Menu.ShowMenu();
     }
-
 }

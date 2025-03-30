@@ -24,5 +24,4 @@ internal static class TableVisualisationEngine
 
         AnsiConsole.Write(table);
     }
-
 }
