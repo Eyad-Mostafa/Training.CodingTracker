@@ -22,7 +22,7 @@ The Coding Tracker is a console application designed to help developers keep tra
 
 ## Requirements
 To run this application, you need the following:
-- **.NET SDK**: Version 6.0 or higher
+- **.NET SDK**: Version 8.0 or higher
 - **SQLite**: Ensure SQLite is installed and accessible
 - **Operating System**: Windows 10 or higher, macOS, or Linux
 
@@ -63,6 +63,3 @@ When you choose to view all records, the application will display a table with t
 - **End Time:** The end time of the session.
 - **Duration:** The duration of the session.
 - **Description:** A brief description of the session.
-
-## Contributing
-Contributions are welcome! If you have any ideas or improvements, feel free to open an issue or submit a pull request.
